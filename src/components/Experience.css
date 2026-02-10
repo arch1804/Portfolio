@@ -1,0 +1,101 @@
+.experience {
+    background: rgba(26, 26, 46, 0.4);
+    position: relative;
+    z-index: 1;
+}
+
+.experience-timeline {
+    max-width: 900px;
+    margin: var(--spacing-lg) auto 0;
+    position: relative;
+    padding-left: var(--spacing-lg);
+}
+
+.experience-timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--color-burnt-orange), var(--color-olive));
+}
+
+.experience-item {
+    position: relative;
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-lg);
+}
+
+.experience-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.experience-marker {
+    position: absolute;
+    left: calc(-1 * var(--spacing-lg) - 6px);
+    top: 0;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--color-burnt-orange);
+    border: 3px solid var(--color-beige);
+    z-index: 1;
+}
+
+.experience-content {
+    background: rgba(255, 255, 255, 0.5);
+    padding: var(--spacing-md);
+    border-left: 3px solid transparent;
+    transition: all var(--transition-base);
+}
+
+.experience-content:hover {
+    border-left-color: var(--color-burnt-orange);
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.experience-role {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-xs);
+    color: white;
+}
+
+.experience-meta {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+    flex-wrap: wrap;
+}
+
+.experience-org {
+    font-weight: 600;
+    color: #b8b8ff;
+}
+
+.experience-period {
+    color: rgba(255, 255, 255, 0.7);
+    opacity: 0.8;
+    font-size: var(--font-size-sm);
+}
+
+.experience-description {
+    line-height: var(--line-height-relaxed);
+    color: rgba(255, 255, 255, 0.85);
+}
+
+@media (max-width: 768px) {
+    .experience-timeline {
+        padding-left: var(--spacing-md);
+    }
+
+    .experience-marker {
+        left: calc(-1 * var(--spacing-md) - 6px);
+    }
+
+    .experience-meta {
+        flex-direction: column;
+        gap: var(--spacing-xs);
+    }
+}

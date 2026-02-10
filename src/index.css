@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Original Color Palette */
+  --color-beige: #FAF7F2;
+  --color-dark: #1C1917;
+  --color-burnt-orange: #C2410C;
+  --color-olive: #3F6212;
+
+  /* Dark Theme Colors */
+  --color-dark-bg: #1a1a2e;
+  --color-dark-secondary: #16213e;
+  --color-dark-accent: #0f3460;
+  --color-purple: #7b68ee;
+  --color-purple-light: #b8b8ff;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 6rem;
+
+  /* Typography */
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+  --font-size-3xl: 3rem;
+  --font-size-4xl: 4rem;
+
+  /* Line Heights */
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 350ms ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-dark-bg);
+  color: white;
+  line-height: var(--line-height-normal);
+  font-size: var(--font-size-base);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  line-height: var(--line-height-tight);
+  color: white;
+}
+
+h1 {
+  font-size: var(--font-size-4xl);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: var(--font-size-3xl);
+}
+
+h3 {
+  font-size: var(--font-size-2xl);
+}
+
+p {
+  line-height: var(--line-height-relaxed);
+  color: rgba(255, 255, 255, 0.9);
+  opacity: 0.85;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all var(--transition-base);
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+/* Section */
+.section {
+  padding: var(--spacing-xl) 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.section-title {
+  font-size: var(--font-size-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--color-purple-light);
+  margin-bottom: var(--spacing-md);
+  font-weight: 600;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: 2px solid var(--color-dark);
+  background: transparent;
+  color: var(--color-dark);
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  text-align: center;
+}
+
+.btn:hover {
+  background: var(--color-dark);
+  color: var(--color-beige);
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background: var(--color-burnt-orange);
+  border-color: var(--color-burnt-orange);
+  color: var(--color-beige);
+}
+
+.btn-primary:hover {
+  background: transparent;
+  color: var(--color-burnt-orange);
+  border-color: var(--color-burnt-orange);
+}
+
+/* Links */
+.link {
+  position: relative;
+  color: var(--color-dark);
+  font-weight: 500;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-burnt-orange);
+  transition: width var(--transition-base);
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  gap: var(--spacing-md);
+}
+
+.grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* Card */
+.card {
+  padding: var(--spacing-md);
+  border: 1px solid rgba(28, 25, 23, 0.1);
+  transition: all var(--transition-base);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.card:hover {
+  border-color: var(--color-burnt-orange);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(28, 25, 23, 0.08);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  :root {
+    --font-size-4xl: 2.5rem;
+    --font-size-3xl: 2rem;
+    --font-size-2xl: 1.5rem;
+    --spacing-xl: 4rem;
+    --spacing-lg: 3rem;
+  }
+
+  .section {
+    min-height: auto;
+    padding: var(--spacing-lg) 0;
+  }
+
+  .container {
+    padding: 0 var(--spacing-sm);
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --font-size-4xl: 2rem;
+    --font-size-3xl: 1.5rem;
+  }
+}
