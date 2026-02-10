@@ -1,16 +1,92 @@
-# React + Vite
+# 🚀 Archita Singh — Developer Portfolio  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
 
-Currently, two official plugins are available:
+<img src="https://img.shields.io/badge/Frontend-React-blue?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Bundler-Vite-purple?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Language-JavaScript-yellow?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Status-Private%20Repository-red?style=for-the-badge"/>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+</div>
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ About This Portfolio  
 
-## Expanding the ESLint configuration
+This is my personal portfolio website built using **Vite + React**, created to present my projects, skills, experience, and research work in a clean and professional manner.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The focus is on **performance, simplicity, and strong visual presentation**.
+
+---
+
+## 👩‍💻 About Me  
+
+I’m an Information Technology undergraduate with a minor in Project Management, passionate about full-stack development, artificial intelligence, and building impactful digital products.
+
+I enjoy working on real-world problems and continuously improving my technical and design skills.
+
+---
+
+## 🧠 Portfolio Sections  
+
+- Home / Hero  
+- About  
+- Skills  
+- Experience  
+- Projects  
+- Research  
+- Contact  
+
+---
+
+## 🛠 Tech Stack  
+
+**Frontend**  
+- React.js  
+- Vite  
+- JavaScript (ES6+)  
+- HTML5  
+- CSS3  
+
+**Backend / Tools**  
+- Node.js  
+- Python  
+- Git & GitHub  
+
+**Design**  
+- Figma  
+
+---
+
+## 📌 Featured Projects  
+
+### 🔹 AI-Based Stock Market Prediction System  
+Machine learning system to analyze market trends and generate stock predictions.
+
+### 🔹 Face Recognition Software (Python + OpenCV)  
+Real-time face detection and recognition system with API integration.
+
+### 🔹 Database Architecture Redesign (EdJustice)  
+Scalable database redesign for managing students, teachers, and stakeholders.
+
+---
+
+## 📚 Research Work  
+
+- Large Language Models and Retrieval-Augmented Generation: A Comprehensive Research Analysis  
+- Enabling Privacy-Preserving Data Collaboration Using PETs  
+
+---
+
+## ⚡ Key Features  
+
+- Fast build using Vite  
+- Responsive design  
+- Clean and minimal UI  
+- Component-based architecture  
+- Accessible layout  
+
+---
+
+## 🗂 Project Structure  
+
